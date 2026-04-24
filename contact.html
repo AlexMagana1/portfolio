@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Alex Magana | Contact</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="home.html">
+        <img src="images/favicon-logo.png" alt="Magana Logo" height="60">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="project1.html">Adidas Environmental Analysis</a></li>
+              <li><a class="dropdown-item" href="project2.html">Mock Sponsorship Proposal</a></li>
+              <li><a class="dropdown-item" href="project3.html">Alumni Relations Campaign</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="container mt-5 mb-5">
+    <div class="row align-items-start">
+
+      <!-- FORM -->
+      <div class="col-md-6">
+        <h1>Contact Me</h1>
+
+        <form action="mailto:amagana1@highpoint.edu" method="post" enctype="text/plain">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form-control mb-3" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control mb-3" required>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" class="form-control mb-3" rows="3" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+      </div>
+
+      <!-- CONTACT CARD -->
+      <div class="col-md-6">
+        <div class="contact-card">
+          <h3>Contact Information</h3>
+
+          <p><strong>Email:</strong><br> amagana1@highpoint.edu</p>
+
+          <p><strong>Phone:</strong><br> (336) 999-3395</p>
+
+          <p><strong>Location:</strong><br> Kernersville, NC</p>
+
+          <p><strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/alexmagana1" target="_blank" rel="noopener noreferrer">
+              View Profile
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Alex Magana</p>
+
+    <div class="footer-links">
+      <p>Phone: (336) 999-3395</p>
+      <a href="contact.html">Contact Me</a>
+      <a href="https://www.linkedin.com/in/alexmagana1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

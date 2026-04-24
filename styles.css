@@ -1,0 +1,203 @@
+/*ive gone through and added coments to each part of my css file to break down what each part is for for
+my convience and to make to easier for to understand when its graded. 
+
+Most of my CSS is organized by section of the portfolio. I have some general styles for the overall page,
+navbar, footer, and cards, then I created specific classes for my club sports section, previous roles section,
+resume section, and contact section. I also included a media query so the embedded resume displays better on
+smaller screens. I used bootstrap, w3schools and some youtube explainations (not tutorials) to understand how 
+exactly all of this works and how to correclty write out all of this code */
+
+/*This controls the background color for my whole site*/
+body {
+    background-color: #E0E1DD !important;
+}
+
+/*Controls navbar color*/
+.custom-navbar {
+    background-color: #0D1B2A;
+}
+
+/*for setting my size and cropping on the carousel on my home page*/
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+/*stlyes for my footer*/
+.site-footer {
+  background-color: #0D1B2A;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+/*adds a litle spacing above my footer link area*/
+.footer-links {
+  margin-top: 10px;
+}
+/*stles my footer links text*/
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/*changes the color of the links when hovered over to make them feel more professional*/
+.footer-links a:hover {
+  color: white;
+}
+
+/*contorls the max width of my headshot on the about page*/
+.about-headshot {
+    max-width: 250px;
+}
+
+/*styles the button on the resume page*/
+.resume-download-btn {
+  background-color: #c3a96b;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/*changes the button color when hovered over*/
+.resume-download-btn:hover {
+  background-color: #a88f56;
+  color: white;
+}
+
+/*styles the container for the resume viewer*/
+.resume-viewer {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/*removes default iframe border and keeps it displayed cleanly*/
+.resume-viewer iframe {
+  display: block;
+  border: none;
+}
+
+
+/*makes the resume frame shorter on smaller screens for responsiveness*/
+@media (max-width: 768px) {
+  .resume-viewer iframe {
+    height: 600px;
+  }
+}
+
+/*removes default card border and adds a soft shadow to Bootstrap cards*/
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/*styles the main club sports section*/
+.club-sports-section {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*styles the club sports headshot image*/
+.club-sports-headshot {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/*styles the main title in the club sports section*/
+.club-sports-title {
+  color: #0D1B2A;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/*styles the subtitle in the club sports section*/
+.club-sports-subtitle {
+  color: #0D1B2A;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/*styles paragraph text in the club sports section for readability*/
+.club-sports-text {
+  color: #1B263B;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/*sdds spacing above the previous roles section*/
+.previous-roles-section {
+  margin-top: 60px;
+}
+
+/*styles each previous role card*/
+.role-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+/*styles the images used at the top of each role card*/
+.role-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/*padding for inside the content area of each role card*/
+.role-content {
+  padding: 25px;
+}
+
+/*styles the role title text*/
+.role-title {
+  color: #0D1B2A;
+  font-weight: 700;
+}
+
+/*styles the organization name text*/
+.role-org {
+  color: #0D1B2A;
+  font-weight: 600;
+}
+
+/*styles the date text for each role*/
+.role-dates {
+  font-size: 14px;
+  color: #0D1B2A;
+  margin-bottom: 12px;
+}
+
+/*styles the description text for each role*/
+.role-text {
+  color: #1B263B;
+  line-height: 1.6;
+}
+
+/*styles the contact information card with dark background and light text*/
+.contact-card {
+  background-color: #0D1B2A;
+  color: #E0E1DD;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+/*sdds spacing below the contact card heading*/
+.contact-card h3 {
+  margin-bottom: 20px;
+}
+
+/*adds spacing between paragraphs inside the contact card*/
+.contact-card p {
+  margin-bottom: 15px;
+}
